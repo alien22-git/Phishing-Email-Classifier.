@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/30011905/README.md)
 # Phishing Email Classifier
 
 Detects phishing emails from raw `.eml` files using TF-IDF text features plus 28
