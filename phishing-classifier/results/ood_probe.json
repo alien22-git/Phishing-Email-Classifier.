@@ -1,0 +1,8 @@
+{
+  "n_emails": 1335,
+  "flag_rate_at_0.5": 0.5685,
+  "flag_rate_at_0.3": 0.6187,
+  "flag_rate_at_0.7": 0.5431,
+  "mean_score": 0.6018,
+  "median_score": 0.8795
+}

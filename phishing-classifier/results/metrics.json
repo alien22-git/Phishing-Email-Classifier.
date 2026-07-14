@@ -1,0 +1,432 @@
+{
+  "summary": [
+    {
+      "model": "rules_any2families",
+      "precision": 0.9155,
+      "recall": 0.2318,
+      "f1": 0.3699,
+      "tp": 401,
+      "fp": 37,
+      "fn": 1329,
+      "tn": 623
+    },
+    {
+      "model": "rules_weighted_score",
+      "roc_auc": 0.7133,
+      "pr_auc": 0.8539,
+      "threshold": 2.0,
+      "precision": 0.8041,
+      "recall": 0.7618,
+      "f1": 0.7824,
+      "tp": 1318,
+      "fp": 321,
+      "fn": 412,
+      "tn": 339
+    },
+    {
+      "model": "tfidf_logreg",
+      "roc_auc": 0.9989,
+      "pr_auc": 0.9995,
+      "threshold": 0.5,
+      "precision": 0.9971,
+      "recall": 0.9879,
+      "f1": 0.9925,
+      "tp": 1709,
+      "fp": 5,
+      "fn": 21,
+      "tn": 655
+    },
+    {
+      "model": "indicators_only_logreg",
+      "roc_auc": 0.9951,
+      "pr_auc": 0.9982,
+      "threshold": 0.5,
+      "precision": 0.9941,
+      "recall": 0.9671,
+      "f1": 0.9804,
+      "tp": 1673,
+      "fp": 10,
+      "fn": 57,
+      "tn": 650
+    },
+    {
+      "model": "tfidf_plus_indicators_logreg",
+      "roc_auc": 0.999,
+      "pr_auc": 0.9996,
+      "threshold": 0.5,
+      "precision": 0.9971,
+      "recall": 0.985,
+      "f1": 0.991,
+      "tp": 1704,
+      "fp": 5,
+      "fn": 26,
+      "tn": 655
+    }
+  ],
+  "rule_threshold_sweep": [
+    {
+      "threshold": 1.0,
+      "precision": 0.7604,
+      "recall": 0.9301,
+      "f1": 0.8367,
+      "flagged_pct": 88.54
+    },
+    {
+      "threshold": 2.0,
+      "precision": 0.8041,
+      "recall": 0.7618,
+      "f1": 0.7824,
+      "flagged_pct": 68.58
+    },
+    {
+      "threshold": 3.0,
+      "precision": 0.8419,
+      "recall": 0.5971,
+      "f1": 0.6987,
+      "flagged_pct": 51.34
+    },
+    {
+      "threshold": 4.0,
+      "precision": 0.8706,
+      "recall": 0.4277,
+      "f1": 0.5736,
+      "flagged_pct": 35.56
+    },
+    {
+      "threshold": 5.0,
+      "precision": 0.8772,
+      "recall": 0.322,
+      "f1": 0.471,
+      "flagged_pct": 26.57
+    },
+    {
+      "threshold": 6.0,
+      "precision": 0.9078,
+      "recall": 0.2561,
+      "f1": 0.3995,
+      "flagged_pct": 20.42
+    },
+    {
+      "threshold": 7.0,
+      "precision": 0.9273,
+      "recall": 0.1844,
+      "f1": 0.3076,
+      "flagged_pct": 14.39
+    },
+    {
+      "threshold": 8.0,
+      "precision": 0.939,
+      "recall": 0.1335,
+      "f1": 0.2338,
+      "flagged_pct": 10.29
+    },
+    {
+      "threshold": 9.0,
+      "precision": 0.9649,
+      "recall": 0.0954,
+      "f1": 0.1736,
+      "flagged_pct": 7.15
+    },
+    {
+      "threshold": 10.0,
+      "precision": 0.9714,
+      "recall": 0.059,
+      "f1": 0.1112,
+      "flagged_pct": 4.39
+    },
+    {
+      "threshold": 11.0,
+      "precision": 0.9765,
+      "recall": 0.048,
+      "f1": 0.0915,
+      "flagged_pct": 3.56
+    },
+    {
+      "threshold": 12.0,
+      "precision": 0.9535,
+      "recall": 0.0237,
+      "f1": 0.0462,
+      "flagged_pct": 1.8
+    }
+  ],
+  "ml_threshold_sweep": [
+    {
+      "threshold": 0.05,
+      "precision": 0.9637,
+      "recall": 0.9988,
+      "f1": 0.981,
+      "flagged_pct": 75.02
+    },
+    {
+      "threshold": 0.1,
+      "precision": 0.9902,
+      "recall": 0.9971,
+      "f1": 0.9937,
+      "flagged_pct": 72.89
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.9931,
+      "recall": 0.9925,
+      "f1": 0.9928,
+      "flagged_pct": 72.34
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.993,
+      "recall": 0.9884,
+      "f1": 0.9907,
+      "flagged_pct": 72.05
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.9965,
+      "recall": 0.9867,
+      "f1": 0.9916,
+      "flagged_pct": 71.67
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.9971,
+      "recall": 0.985,
+      "f1": 0.991,
+      "flagged_pct": 71.51
+    },
+    {
+      "threshold": 0.6,
+      "precision": 0.9976,
+      "recall": 0.9786,
+      "f1": 0.988,
+      "flagged_pct": 71.0
+    },
+    {
+      "threshold": 0.7,
+      "precision": 0.9988,
+      "recall": 0.9711,
+      "f1": 0.9848,
+      "flagged_pct": 70.38
+    },
+    {
+      "threshold": 0.8,
+      "precision": 0.9988,
+      "recall": 0.9642,
+      "f1": 0.9812,
+      "flagged_pct": 69.87
+    },
+    {
+      "threshold": 0.9,
+      "precision": 0.9988,
+      "recall": 0.952,
+      "f1": 0.9748,
+      "flagged_pct": 69.0
+    },
+    {
+      "threshold": 0.95,
+      "precision": 0.9994,
+      "recall": 0.9364,
+      "f1": 0.9669,
+      "flagged_pct": 67.82
+    },
+    {
+      "threshold": 0.99,
+      "precision": 1.0,
+      "recall": 0.6757,
+      "f1": 0.8065,
+      "flagged_pct": 48.91
+    }
+  ],
+  "top_phish_ngrams": [
+    "your",
+    "de",
+    "unsubscribe",
+    "our",
+    "account",
+    "this email",
+    "sie",
+    "please",
+    "para",
+    "you",
+    "wallet",
+    "email",
+    "claim",
+    "receive",
+    "click",
+    "urltoken urltoken",
+    "emails",
+    "we",
+    "details",
+    "payment",
+    "bonus",
+    "click here",
+    "team",
+    "dear",
+    "if you"
+  ],
+  "top_ham_ngrams": [
+    "the",
+    "url urltoken",
+    "urltoken date",
+    "url",
+    "date",
+    "it",
+    "of",
+    "re",
+    "that",
+    "wrote",
+    "on",
+    "urltoken",
+    "but",
+    "and",
+    "they",
+    "emailtoken urltoken",
+    "in",
+    "is",
+    "mailing",
+    "mailing list",
+    "not",
+    "list",
+    "list emailtoken",
+    "to",
+    "_______________________________________________"
+  ],
+  "indicator_prevalence": {
+    "urgency_terms": {
+      "phish_mean": 0.642,
+      "ham_mean": 0.055
+    },
+    "threat_terms": {
+      "phish_mean": 0.198,
+      "ham_mean": 0.05
+    },
+    "credential_terms": {
+      "phish_mean": 1.075,
+      "ham_mean": 0.185
+    },
+    "reward_terms": {
+      "phish_mean": 1.347,
+      "ham_mean": 0.594
+    },
+    "exclamations_per_100w": {
+      "phish_mean": 1.456,
+      "ham_mean": 0.373
+    },
+    "subject_all_caps_words": {
+      "phish_mean": 0.462,
+      "ham_mean": 0.327
+    },
+    "subject_has_re_fwd_fake": {
+      "phish_mean": 0.053,
+      "ham_mean": 0.414
+    },
+    "n_urls": {
+      "phish_mean": 3.101,
+      "ham_mean": 4.935
+    },
+    "url_ip_host": {
+      "phish_mean": 0.034,
+      "ham_mean": 0.002
+    },
+    "url_shortener": {
+      "phish_mean": 0.18,
+      "ham_mean": 0.005
+    },
+    "url_at_symbol": {
+      "phish_mean": 0.019,
+      "ham_mean": 0.0
+    },
+    "url_many_subdomains": {
+      "phish_mean": 0.728,
+      "ham_mean": 0.227
+    },
+    "url_suspicious_tld": {
+      "phish_mean": 0.063,
+      "ham_mean": 0.0
+    },
+    "url_punycode": {
+      "phish_mean": 0.0,
+      "ham_mean": 0.0
+    },
+    "url_long": {
+      "phish_mean": 0.982,
+      "ham_mean": 0.023
+    },
+    "url_port": {
+      "phish_mean": 0.007,
+      "ham_mean": 0.206
+    },
+    "url_hex_chars": {
+      "phish_mean": 0.148,
+      "ham_mean": 0.012
+    },
+    "anchor_href_mismatch": {
+      "phish_mean": 0.024,
+      "ham_mean": 0.0
+    },
+    "n_distinct_domains": {
+      "phish_mean": 1.231,
+      "ham_mean": 2.005
+    },
+    "replyto_differs": {
+      "phish_mean": 0.171,
+      "ham_mean": 0.182
+    },
+    "returnpath_differs": {
+      "phish_mean": 0.184,
+      "ham_mean": 0.564
+    },
+    "brand_name_freemail": {
+      "phish_mean": 0.001,
+      "ham_mean": 0.0
+    },
+    "brand_domain_mismatch": {
+      "phish_mean": 0.05,
+      "ham_mean": 0.029
+    },
+    "display_name_addr_mismatch": {
+      "phish_mean": 0.003,
+      "ham_mean": 0.0
+    },
+    "from_missing": {
+      "phish_mean": 0.154,
+      "ham_mean": 0.0
+    },
+    "links_offdomain": {
+      "phish_mean": 0.628,
+      "ham_mean": 0.623
+    },
+    "has_html": {
+      "phish_mean": 0.961,
+      "ham_mean": 0.068
+    },
+    "n_attachments": {
+      "phish_mean": 0.064,
+      "ham_mean": 0.003
+    }
+  },
+  "false_positive_ids": [
+    "0208.df5d7a4e950a3aa80a71fbb5186b0f87",
+    "0946.eb5e7c2de78b6fec81e509923689a7a4",
+    "0018.4c0db481993d05a5a0d1ff09eb9faace",
+    "0151.0402ce39c606a9988884acd4707463cf",
+    "0137.e182dacf304ecdeb76230d7c5374aed3"
+  ],
+  "false_negative_ids": [
+    "sample-399.eml",
+    "sample-8452.eml",
+    "sample-6488.eml",
+    "sample-1900.eml",
+    "sample-7295.eml",
+    "sample-4432.eml",
+    "sample-4713.eml",
+    "sample-129.eml",
+    "sample-70.eml",
+    "sample-833.eml",
+    "sample-7268.eml",
+    "sample-1712.eml",
+    "sample-2433.eml",
+    "sample-47.eml",
+    "sample-7270.eml"
+  ],
+  "n_train": 7170,
+  "n_test": 2390
+}
